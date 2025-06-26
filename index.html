@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple E-Commerce Landing</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #007BFF;
+    }
+
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: #e0f0ff;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      padding: 12px 24px;
+      font-size: 1em;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 60px 20px;
+      background: #fff;
+    }
+
+    .product {
+      background: #f9f9f9;
+      border-radius: 8px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      margin: 10px 0;
+    }
+
+    .newsletter {
+      padding: 60px 20px;
+      text-align: center;
+      background: #007BFF;
+      color: white;
+    }
+
+    .newsletter input {
+      padding: 10px;
+      width: 250px;
+      max-width: 90%;
+      border: none;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+
+    .newsletter button {
+      padding: 10px 20px;
+      border: none;
+      background: white;
+      color: #007BFF;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      background: #f0f0f0;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Shafi's Wardrobe
+  </header>
+
+  <section class="hero" data-aos="fade-up">
+    <h1>Find Your Style</h1>
+    <p>Trendy fashion and accessories at unbeatable prices</p>
+    <button>Shop Now</button>
+  </section>
+
+  <section class="products">
+    <div class="product" data-aos="fade-up" data-aos-delay="100">
+      <img src="Tshirt (1).jpg" alt="Product 1">
+      <h3>Oversized Tshirts</h3>
+      <p>$89.99</p>
+    </div>
+    <div class="product" data-aos="fade-up" data-aos-delay="200">
+      <img src="Sunglasses.jpg" alt="Product 2">
+      <h3>Sunglasses</h3>
+      <p>$59.99</p>
+    </div>
+    <div class="product" data-aos="fade-up" data-aos-delay="300">
+      <img src="Hoodie.jpg" alt="Product 3">
+      <h3>Hoodies</h3>
+      <p>$120.00</p>
+    </div>
+  </section>
+
+  <section class="newsletter" data-aos="fade-up">
+    <h2>Stay Updated</h2>
+    <p>Subscribe for new arrivals & exclusive offers</p>
+    <input type="email" placeholder="Your email" />
+    <button>Subscribe</button>
+  </section>
+
+  <footer>
+    © 2025 Shafi's Wardrobe. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+</body>
+</html>
